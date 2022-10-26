@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[15]:
-
 
 #DATASET IMPORTING...
 from sklearn.datasets import load_iris
@@ -21,18 +16,10 @@ c_knn = KNeighborsClassifier(n_neighbors=5)
 c_knn.fit(x_train,y_train)
 y_pred = c_knn.predict(x_test)
 
-
 #CHECK ACCURACY...
-print("Accuracy : ",metrics.accuracy_score(y_test,y_pred))
+print("ACCURACY : ",metrics.accuracy_score(y_test,y_pred))
 
 sample = [[2,2,7,3]]
 pred = c_knn.predict(sample)
 pred_v = [iris.target_names[p] for p in pred]
 print(pred_v)
-
-
-# In[ ]:
-
-
-
-
