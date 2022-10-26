@@ -9,5 +9,5 @@ y_pred=gnb.fit(X_train,y_train).predict(X_test)
 print(y_pred)
 x_new=[[4,4,3,3]]
 y_new=gnb.fit(X_train,y_train).predict(x_new)
-print("predicted output for [[5,5,4,4]]:",y_new)
+print("predicted output for [[4,4,3,3]]:",y_new)
 print("Naive bayes score               :",gnb.score(X_test,y_test))
