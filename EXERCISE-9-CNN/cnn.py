@@ -21,6 +21,7 @@ x_test = x_test.reshape((10000,28,28,1))
 x_train = x_train.astype('float32')/255
 x_test = x_test.astype('float32')/255
 
+
 print("Shape of x_train:",x_train.shape)
 print("Shape of x_test:",x_test.shape)
 
